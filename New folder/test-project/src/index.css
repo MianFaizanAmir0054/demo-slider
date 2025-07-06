@@ -1,0 +1,45 @@
+@import "tailwindcss";
+ 
+ 
+ @font-face {
+    font-family: 'GE-Dinar-Medium';
+    src: url('/fonts/GE-Dinar-Medium.woff2') format('woff2'),
+         url('/fonts/GE-Dinar-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body {
+    font-family: 'GE-Dinar-Medium', Arial, sans-serif;
+  }
+
+.book-container {
+  width: 100%;
+  margin: auto;
+  direction: rtl;                /* RTL reading direction */
+}
+
+.flip-book {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.page {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+.page-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  color: #000;
+  background: transparent;       /* or t.bg_color if needed */
+  white-space: pre-wrap;        /* support multiline */
+  word-wrap: break-word;
+}
