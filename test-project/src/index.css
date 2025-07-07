@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'GE-Dinar-Medium'; /* This is the name you'll use in props */
+  src: url('../public/fonts/GE_Dinar_One_Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* index.css */
+:root {
+  --app‑zoom: 0.84;       /* 80% scale */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-y: hidden;
+    zoom: var(--app‑zoom);
+}
+
+#root {
+  position: relative;
+  
+}
+
+/* index.css */
+.book-page {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* fixed typo: was 'alig-items' */
+  /* background: white; */
+      /* height: 80vh; */
+
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.navigation-container{
+  display: flex;
+  width: "100%";
+
+  justify-content: center;
+  align-items: center;
+}
